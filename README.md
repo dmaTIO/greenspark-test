@@ -20,7 +20,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 # Project Overview
 
-Comments can be foung throught the project
+Comments can be found throughout the project
 
 ## Routes
 
