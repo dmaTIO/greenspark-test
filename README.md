@@ -16,13 +16,15 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+###### Demo can be seen at: [`https://greenspark-test.vercel.app/`](https://greenspark-test.vercel.app/).
+
 # Project Overview
 
 Comments can be foung throught the project
 
 ## Routes
 
-There is only one route in this application
+There is only one route in this application (without the API route)
 
 ###### Index Route:
 
@@ -66,6 +68,7 @@ Receives the active status and a function to set the active status as props.
 
 Represents the logo of a product.
 Receives the color as a prop.
+This could have been an image but I have taken the liberty of turning it into a component so we can change the color when used on the wdigets.
 
 ###### TooltipWrapper
 
@@ -73,7 +76,8 @@ Wraps another component and displays a tooltip with the provided text when the w
 
 ## Other Files
 
-next.config.mjs
+###### next.config.mjs
+
 Configuration for the Next.js application.
 Disables React's strict mode and enables server-side rendering for styled-components.
 
@@ -95,7 +99,9 @@ TypeScript types for product data
 ###### config\colors.ts and config\images.ts
 
 Configuration files for colors and images used in the application.
+I prefer keeping these in config file, so I can make changes and swap them out in one place if I have to in the future.
 
 ###### styles\globals.css
 
 Global styles for the application.
+Basic styles, not using them for components.
