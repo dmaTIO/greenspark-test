@@ -65,7 +65,7 @@ const TooltipWrapper: React.FC<TooltipWrapperProps> = ({
 
   useEffect(() => {
     return () => {
-      //clear the timeout if the component unmounts
+      //clear the timeout if the component unmounts to avoid memory leaks
       if (debounceTimer) {
         clearTimeout(debounceTimer);
       }
