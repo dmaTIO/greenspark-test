@@ -38,6 +38,14 @@ const ProductWrapper = styled.div`
   margin-top: 20px;
 `;
 
+const GhostWidget = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 230px;
+`;
+
 const ProductWidgetContainer = ({ productData }: { productData: Products }) => {
   //Declaring the state for the selected product
   //Doing it here since there's only one product selected at a time
@@ -73,6 +81,7 @@ const ProductWidgetContainer = ({ productData }: { productData: Products }) => {
             setSelectedProduct={selectActiveProduct}
           />
         ))}
+        {productData.length % 3 !== 0 && <GhostWidget />}
       </ProductWrapper>
     </Container>
   );
